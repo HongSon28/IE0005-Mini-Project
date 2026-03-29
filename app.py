@@ -19,9 +19,11 @@ fare = st.number_input("Fare", 0.0, 500.0, 50.0)
 cabin = st.text_input("Your cabin, NA if unknown")
 
 
-# Preprocess (adjust based on your training pipeline)
+# Preprocess (adjust based on training pipeline)
 sex = 1 if sex == "male" else 0
 
+if cabin == None:
+    cabin = "NA"
 cabin_bool = 0 if cabin == "NA" else 1
 
 age_group = 0;

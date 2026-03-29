@@ -3,7 +3,7 @@ IE0005 Group Mini Project
 How to use the predictor:
 
 1st Option
-Run it within the jupyter notebook, Main.ipynp
+1. Run it within the jupyter notebook, Main.ipynp
 
 2nd Option
 1. conda active your_env

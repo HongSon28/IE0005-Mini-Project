@@ -59,7 +59,9 @@ if st.button("Predict"):
     
     if perc >= 66:
         st.success("🎉 You most likely survived, congrats!")
+        st.balloons()
     else:
+        st.snow()
         if perc <=33:
             st.error("💀 You likely to not survived, good luck next time!")
         else:

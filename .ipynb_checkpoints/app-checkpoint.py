@@ -15,6 +15,7 @@ pclass = st.selectbox("Passenger Class", [1, 2, 3])
 sex = st.selectbox("Sex", ["male", "female"])
 age = st.slider("Age", 0, 80, 25)
 sibsp = st.number_input("Siblings/Spouses aboard", 0, 10, 0)
+parch = st.number_input("Parents/Children aboard", 0, 10, 0)
 fare = st.number_input("Fare", 0.0, 500.0, 50.0)
 cabin = st.text_input("Your cabin, NA if unknown")
 
@@ -32,6 +33,7 @@ data = pd.DataFrame([{
         "Pclass": pclass,
         "Sex": sex,
         "SibSp": sibsp,
+        "Parch": parch,
         "Fare": fare,
         "Age": age,
     }])
